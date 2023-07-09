@@ -31,7 +31,7 @@ main()
             cout << a << " is odd\n";
         }
     }
-    else
+    else if(a < 0)
     {
         cout << a << " is negative\n";
         if (a % 2 == 1)
@@ -42,6 +42,9 @@ main()
         {
             cout << a << " is even\n";
         }
+    }
+    else{
+        cout<<"number entered is zero"<<endl;
     }
 
     // if-else ladder

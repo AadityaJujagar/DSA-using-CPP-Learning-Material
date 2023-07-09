@@ -19,7 +19,7 @@ main()
     cout << endl;
 
     // table of n using for loop
-    int k, m;
+    int m;
     cin >> m;
     for (int k = 1; k <= 10; k++)
     {
@@ -27,7 +27,7 @@ main()
     }
     cout << endl;
 
-    // without conditions and initialization in for loop
+    // for loop without conditions and initialization
     int l = 1, n;
     cin >> n;
     for (;;)

@@ -47,7 +47,7 @@ main()
 
     // numbers upto will be printed
     double d = 1.23234583458405945098523;
-    cout << fixed << setprecision(8);
+    cout << fixed << setprecision(12);
     cout << d << endl;
 
     // datatypes and their sizes
