@@ -82,5 +82,61 @@ int main() {
         }
         cout << endl;
     }
+
+    // 5 x 5 number full pyramid
+    for (int i = 0; i < 5; i++)
+    {
+        int k = i;
+        for (int j = 0; j < 5 + i; j++)
+        {
+            if (j < 5 - (i + 1))
+            {
+                cout << "  ";
+            }
+            else if (j < 5)
+            {
+                k++;
+                cout << k << " "; 
+            }
+            else if (j > 4) {
+                k--;
+                cout << k << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    // hollow full number pyramid, 5 x 5
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5 + i; j++)
+        {
+            if (j < 5 - (i + 1))
+            {
+                cout << "  ";
+            }
+            else if (j == 5 - (i + 1)) 
+            {
+                cout << 1 << " ";
+            }
+            else if ((i < 4 && i > 0) && j > 5 - i && j < 5 + i)
+            {
+                cout << "  ";
+            }
+            else if (i == 4) {
+                if (j % 2 == 1)
+                {
+                    cout << "  ";
+                }
+                if (j % 2 == 0) {
+                    cout << (j + 2) / 2 << " ";
+                }
+            }
+            if(j == 5 - 1 + i && (i > 0 && i < 4)) {
+                cout << i + 1;
+            }
+        }
+        cout << endl;
+    }
     return 0;
 }
